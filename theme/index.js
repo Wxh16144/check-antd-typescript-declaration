@@ -24,7 +24,7 @@ function useToken() {
   };
 }
 var _default = {
-  /** @private Test Usage. Do not use in production. */
+  /** @internal Test Usage. Do not use in production. */
   defaultConfig: _internal.defaultConfig,
   /** Default seedToken */
   defaultSeed: _internal.defaultConfig.token,

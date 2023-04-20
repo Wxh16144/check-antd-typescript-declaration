@@ -8,7 +8,7 @@ declare function useToken(): {
 };
 export { type GlobalToken };
 declare const _default: {
-    /** @private Test Usage. Do not use in production. */
+    /** @internal Test Usage. Do not use in production. */
     defaultConfig: {
         token: import("./internal").SeedToken;
         hashed: boolean;

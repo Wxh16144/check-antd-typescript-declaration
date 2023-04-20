@@ -6,11 +6,6 @@ import type { MenuTheme } from './MenuContext';
 export interface MenuProps extends Omit<RcMenuProps, 'items'> {
     theme?: MenuTheme;
     inlineIndent?: number;
-    /**
-     * @private Internal Usage. Not promise crash if used in production. Connect with chenshuai2144
-     *   for removing.
-     */
-    _internalDisableMenuItemTitleTooltip?: boolean;
     items?: ItemType[];
 }
 declare const InternalMenu: React.ForwardRefExoticComponent<MenuProps & SiderContextProps & {
