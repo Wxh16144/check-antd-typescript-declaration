@@ -1,5 +1,6 @@
 import * as React from 'react';
 import type { ArgsProps, ConfigOptions, MessageType, TypeOpen } from './interface';
+import PurePanel from './PurePanel';
 import useMessage from './useMessage';
 export { ArgsProps };
 declare function setMessageGlobalConfig(config: ConfigOptions): void;
@@ -8,6 +9,8 @@ interface BaseMethods {
     destroy: (key?: React.Key) => void;
     config: typeof setMessageGlobalConfig;
     useMessage: typeof useMessage;
+    /** @private Internal Component. Do not use in your production. */
+    _InternalPanelDoNotUseOrYouWillBeFired: typeof PurePanel;
 }
 interface MessageMethods {
     info: TypeOpen;

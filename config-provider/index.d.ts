@@ -62,6 +62,8 @@ export declare const globalConfig: () => {
     getRootPrefixCls: () => string;
 };
 declare const ConfigProvider: React.FC<ConfigProviderProps> & {
+    /** @private internal Usage. do not use in your production */
+    ConfigContext: typeof ConfigContext;
     /** @deprecated Please use `ConfigProvider.useConfig().componentSize` instead */
     SizeContext: typeof SizeContext;
     config: typeof setGlobalConfig;
